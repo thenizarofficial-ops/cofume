@@ -1,0 +1,174 @@
+/* ==========================================================================
+   COFUME CAFE — RESPONSIVE ADAPTATIONS (MOBILE TO DESKTOP)
+   ========================================================================== */
+
+@media (max-width: 1100px) {
+  .highlights-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .menu-cards-showcase {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-main-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .nav-menu {
+    display: none;
+  }
+
+  .mobile-nav-toggle {
+    display: flex;
+  }
+
+  .hero-triptych {
+    grid-template-columns: 1fr;
+    max-width: 480px;
+    gap: 1.25rem;
+  }
+
+  .triptych-card.card-side {
+    display: none;
+  }
+
+  .heritage-grid {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+
+  .heritage-visual-wrap {
+    max-width: 520px;
+    margin: 0 auto;
+  }
+
+  .sanctuary-banner {
+    height: 420px;
+  }
+
+  .sanctuary-spaces-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .reviews-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .ambience-grid {
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: 220px;
+  }
+
+  .ambience-item:nth-child(1) { grid-column: span 6; grid-row: span 2; }
+  .ambience-item:nth-child(2) { grid-column: span 3; grid-row: span 1; }
+  .ambience-item:nth-child(3) { grid-column: span 3; grid-row: span 2; }
+  .ambience-item:nth-child(4) { grid-column: span 3; grid-row: span 1; }
+  .ambience-item:nth-child(5) { grid-column: span 3; grid-row: span 1; }
+  .ambience-item:nth-child(6) { grid-column: span 3; grid-row: span 1; }
+  .ambience-item:nth-child(7) { grid-column: span 3; grid-row: span 1; }
+
+  .booking-split {
+    grid-template-columns: 1fr;
+    gap: 3.5rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .header-wrapper {
+    padding: 0 1rem;
+    top: 1rem;
+  }
+
+  .site-nav {
+    height: 58px;
+    padding: 0.4rem 0.5rem 0.4rem 1.2rem;
+  }
+
+  .nav-cta-group .btn {
+    display: none;
+  }
+
+  .hero-editorial {
+    padding: calc(var(--header-height) + 2rem) 0 4rem;
+  }
+
+  .hero-main-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-cta-row {
+    flex-direction: column;
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .hero-cta-row .btn {
+    width: 100%;
+  }
+
+  .highlights-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .menu-cards-showcase {
+    grid-template-columns: 1fr;
+  }
+
+  .sanctuary-banner {
+    height: 360px;
+  }
+
+  .sanctuary-banner-overlay {
+    padding: 1.5rem;
+  }
+
+  .sanctuary-quote {
+    font-size: 1.75rem;
+  }
+
+  .ambience-grid {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 240px;
+  }
+
+  .ambience-item:nth-child(1),
+  .ambience-item:nth-child(2),
+  .ambience-item:nth-child(3),
+  .ambience-item:nth-child(4),
+  .ambience-item:nth-child(5),
+  .ambience-item:nth-child(6),
+  .ambience-item:nth-child(7) {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+
+  .form-2col {
+    grid-template-columns: 1fr;
+  }
+
+  .booking-info-box,
+  .booking-form-box {
+    padding: 1.75rem;
+  }
+
+  .footer-main-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .footer-bottom-bar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .floating-concierge {
+    bottom: 1.25rem;
+    right: 1.25rem;
+  }
+}

@@ -1,0 +1,47 @@
+/* ==========================================================================
+   COFUME CAFE — EDITORIAL DESIGN SYSTEM
+   Directly matching the visual language of Cafenza (https://cafenza.framer.website/)
+   ========================================================================== */
+
+:root {
+  /* --- Authentic Cafenza Luxury Color Palette --- */
+  --color-dark-obsidian: #150d07;       /* Cafenza primary dark */
+  --color-dark-surface: #1d120a;        /* Card & container dark */
+  --color-dark-card: #24170e;           /* Elevated card dark */
+  --color-dark-border: rgba(164, 137, 97, 0.18);
+  --color-dark-border-subtle: rgba(255, 255, 255, 0.07);
+
+  --color-cream-light: #fff9f2;         /* Cafenza warm linen cream */
+  --color-cream-soft: #faf2e9;          /* Cafenza soft sand paper */
+  --color-cream-surface: #f3e9dc;       /* Card cream */
+  --color-cream-border: rgba(51, 22, 0, 0.12);
+
+  --color-bronze-gold: #a48961;         /* Cafenza signature muted bronze accent */
+  --color-bronze-light: #c2a77e;        /* Light bronze hover */
+  --color-bronze-dark: #826a45;         /* Deep bronze */
+  --color-bronze-glow: rgba(164, 137, 97, 0.28);
+
+  --color-text-on-dark: #fff9f2;
+  --color-text-on-dark-muted: #c2b5a5;
+  --color-text-on-dark-subtle: #8a7c6f;
+
+  --color-text-on-cream: #331600;       /* Cafenza rich dark espresso text */
+  --color-text-on-cream-muted: #5c4433;
+  --color-text-on-cream-subtle: #8c7362;
+
+  /* --- Typography Families --- */
+  --font-display: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', 'Inter', -apple-system, sans-serif;
+  --font-mono: 'Space Mono', monospace;
+
+  /* --- Spacing & Radii --- */
+  --radius-pill: 9999px;
+  --radius-lg: 16px;
+  --radius-md: 10px;
+  --radius-sm: 6px;
+
+  --transition-smooth: 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-fast: 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+
+  --header-height: 84px;
+}

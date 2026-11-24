@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>COFUME CAFE — Specialty Coffee, Italian Dining & Private Moments</title>
+  <meta name="description" content="Cofume Cafe is a luxury hospitality destination offering single-origin specialty coffee, handcrafted Italian pasta, authentic pizza, and secluded comfortable seating spaces.">
+  
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="COFUME CAFE — Specialty Coffee, Italian Dining & Private Moments">
+  <meta property="og:description" content="More Than Coffee. A Place to Belong. Discover handcrafted coffee, Italian flavours, and private moments worth remembering.">
+  <meta property="og:image" content="assets/brand/cofume-logo.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/brand/logo-mark.svg">
+
+  <!-- Preconnect Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Stylesheets (Cache-busted) -->
+  <link rel="stylesheet" href="assets/css/variables.css?v=20261103">
+  <link rel="stylesheet" href="assets/css/base.css?v=20261103">
+  <link rel="stylesheet" href="assets/css/components.css?v=20261103">
+  <link rel="stylesheet" href="assets/css/sections.css?v=20261103">
+  <link rel="stylesheet" href="assets/css/modals.css?v=20261103">
+  <link rel="stylesheet" href="assets/css/responsive.css?v=20261103">
+</head>
+<body class="theme-dark">
+
+  <!-- =======================================================================
+       01. FLOATING NAVIGATION BAR (CAFENZA STYLE)
+       ======================================================================= -->
+  <header class="header-wrapper" role="banner">
+    <nav class="site-nav" role="navigation" aria-label="Main Navigation">
+      <!-- Brand Lockup -->
+      <a href="#hero" class="nav-brand" aria-label="Cofume Cafe">
+        <svg class="nav-logo-icon" viewBox="0 0 160 120" fill="none">
+          <path d="M78 12 C74 22 84 28 80 38 C77 44 73 46 72 50 C71 52 73 54 75 52 C79 48 83 44 85 38 C89 26 77 22 81 12 C82 9 80 9 78 12Z" fill="currentColor"/>
+          <path d="M89 18 C86 25 93 29 90 37 C88 41 84 43 83 47 C82 49 84 50 86 48 C89 45 93 41 94 36 C97 27 88 23 91 18 C92 16 90 16 89 18Z" fill="currentColor"/>
+          <path d="M52 50 C52 50 56 82 86 82 C108 82 118 64 120 50 C110 54 98 56 86 56 C74 56 62 54 52 50Z" fill="currentColor"/>
+          <path d="M115 52 C125 53 134 60 128 73 C124 81 113 77 108 73 C113 75 120 76 123 71 C127 63 121 57 113 55 Z" fill="currentColor"/>
+          <path d="M48 87 C60 92 112 92 124 87 C118 90 98 94 86 94 C74 94 54 90 48 87Z" fill="currentColor"/>
+        </svg>
+        <div class="nav-brand-text">
+          <span class="nav-brand-title">COFUME</span>
+          <span class="nav-brand-sub">CAFE</span>
+        </div>
+      </a>
+
+      <!-- Menu Links -->
+      <ul class="nav-menu">
+        <li><a href="#highlights" class="nav-menu-link">Highlights</a></li>
+        <li><a href="#heritage" class="nav-menu-link">Heritage</a></li>
+        <li><a href="#menu" class="nav-menu-link">Menu</a></li>
+        <li><a href="#sanctuary" class="nav-menu-link">Private Spaces</a></li>
+        <li><a href="#ambience" class="nav-menu-link">Ambience</a></li>
+        <li><a href="#faq" class="nav-menu-link">FAQ</a></li>
+      </ul>
+
+      <!-- CTA & Mobile Trigger -->
+      <div class="nav-cta-group">
+        <a href="#reserve" class="btn btn-pill-primary">
+          <span>Reserve Table</span>
+          <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </a>
+        <button class="mobile-nav-toggle" aria-label="Toggle Navigation Drawer" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="drawer-backdrop"></div>
+  <aside class="mobile-menu-drawer" role="dialog" aria-modal="true" aria-label="Navigation Drawer">
+    <div>
+      <ul class="drawer-links">
+        <li><a href="#hero" class="drawer-link">Home</a></li>
+        <li><a href="#highlights" class="drawer-link">Highlights</a></li>
+        <li><a href="#heritage" class="drawer-link">Heritage</a></li>
+        <li><a href="#menu" class="drawer-link">Our Menu</a></li>
+        <li><a href="#sanctuary" class="drawer-link">Private Spaces</a></li>
+        <li><a href="#ambience" class="drawer-link">Ambience</a></li>
+        <li><a href="#faq" class="drawer-link">FAQ</a></li>
+        <li><a href="#reserve" class="drawer-link">Reserve Table</a></li>
+      </ul>
+    </div>
+    <div style="border-top: 1px solid var(--color-dark-border); padding-top: 1.5rem;">
+      <p style="font-size: 0.85rem; color: var(--color-text-on-dark-muted); margin-bottom: 1rem;">
+        Central Promenade &bull; Suite 104<br>
+        Mon–Sun: 7:30 AM – 11:30 PM
+      </p>
+      <a href="#reserve" class="btn btn-pill-primary" style="width: 100%;">Reserve A Private Table</a>
+    </div>
+  </aside>
+
+  <main>
+    <!-- =====================================================================
+         02. HERO SECTION (EDITORIAL TRIPTYCH SHOWCASE)
+         ===================================================================== -->
+    <section class="hero-editorial" id="hero">
+      <div class="container hero-inner">
+        <div class="editorial-badge">
+          EXPERIENCE THE CRAFT &bull; PRIVATE SANCTUARY
+        </div>
+
+        <h1 class="hero-main-title">
+          More Than Coffee.<br>
+          <span class="italic-accent">A Place to Belong.</span>
+        </h1>
+
+        <p class="hero-lead-text">
+          Discover handcrafted single-origin coffee, authentic Italian flavours, and secluded comfortable seating spaces designed for moments that matter.
+        </p>
+
+        <div class="hero-cta-row">
+          <a href="#reserve" class="btn btn-pill-primary">
+            <span>Reserve Your Space</span>
+            <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+          <button class="btn btn-pill-ghost" data-open-menu data-menu-category="all">
+            <span>Explore Our Menu</span>
+          </button>
+        </div>
+
+        <!-- 3-Image Framed Gallery Triptych (Cafenza Composition) -->
+        <div class="hero-triptych">
+          <!-- Left: Single-Origin Espresso -->
+          <div class="triptych-card card-side">
+            <img src="assets/images/coffee-espresso.jpg" alt="Barista extracting single origin espresso" class="triptych-img">
+            <div class="triptych-overlay">
+              <span class="triptych-tag">Extraction</span>
+              <span class="triptych-title">Single Origin Pour</span>
+            </div>
+          </div>
+
+          <!-- Center: Private Sanctuary Seating -->
+          <div class="triptych-card card-center">
+            <img src="assets/images/experience-date.jpg" alt="Private candlelit table for couples" class="triptych-img">
+            <div class="triptych-overlay">
+              <span class="triptych-tag">Sanctuary</span>
+              <span class="triptych-title">Private Seating Booths</span>
+            </div>
+          </div>
+
+          <!-- Right: Handcrafted Italian Pasta -->
+          <div class="triptych-card card-side">
+            <img src="assets/images/food-pasta.jpg" alt="Handcrafted Italian Truffle Pasta" class="triptych-img">
+            <div class="triptych-overlay">
+              <span class="triptych-tag">Gastronomy</span>
+              <span class="triptych-title">Handmade Truffle Pasta</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         03. SECTION 02 — OUR HIGHLIGHTS (CAFENZA SECTION)
+         ===================================================================== -->
+    <section class="section-highlights" id="highlights">
+      <div class="container">
+        <div class="section-head section-head-center">
+          <span class="editorial-badge">OUR HIGHLIGHTS</span>
+          <h2 class="section-head-title">Moments and Details That Set Us Apart</h2>
+          <p class="section-head-desc">
+            Cofume Cafe was founded on a commitment to craftsmanship, privacy, and hospitality that values your time.
+          </p>
+        </div>
+
+        <div class="highlights-grid">
+          <!-- Card 1 -->
+          <div class="highlight-card">
+            <div class="highlight-icon-wrap">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="3" width="18" height="18" rx="2"/>
+                <path d="M3 9h18M9 21V9"/>
+              </svg>
+            </div>
+            <h3 class="highlight-title">Private Seating Spaces</h3>
+            <p class="highlight-desc">
+              Comfortable, secluded nooks and curtained velvet booths designed for relaxed conversations, quiet dates, or solitary reading without crowd noise.
+            </p>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="highlight-card">
+            <div class="highlight-icon-wrap">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 8h1a4 4 0 0 1 0 8h-1"/>
+                <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/>
+                <line x1="6" y1="1" x2="6" y2="4"/>
+                <line x1="10" y1="1" x2="10" y2="4"/>
+                <line x1="14" y1="1" x2="14" y2="4"/>
+              </svg>
+            </div>
+            <h3 class="highlight-title">Handcrafted Coffee</h3>
+            <p class="highlight-desc">
+              Single-origin Ethiopian and Colombian beans pulled through custom espresso machinery, balanced with silky microfoam and clean cold brews.
+            </p>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="highlight-card">
+            <div class="highlight-icon-wrap">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83M16.62 12l-5.74 9.94"/>
+              </svg>
+            </div>
+            <h3 class="highlight-title">Italian Food Heritage</h3>
+            <p class="highlight-desc">
+              Bronze-die cut truffle tagliatelle, 48-hour fermented sourdough pizza baked stone-side, and freshly laminated butter croissants every morning.
+            </p>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="highlight-card">
+            <div class="highlight-icon-wrap">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+              </svg>
+            </div>
+            <h3 class="highlight-title">Unhurried Hospitality</h3>
+            <p class="highlight-desc">
+              Personalized, attentive service that never rushes your table. Enjoy lingering evenings and relaxed mornings at your own intentional rhythm.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         04. SECTION 03 — OUR HERITAGE & STORY (WARM LINEN CREAM SECTION)
+         ===================================================================== -->
+    <section class="section-heritage theme-cream" id="heritage">
+      <div class="container">
+        <div class="heritage-grid">
+          <!-- Visual Layering -->
+          <div class="heritage-visual-wrap">
+            <div class="heritage-main-img-box">
+              <img src="assets/images/story-roastery.jpg" alt="Cofume Roastery and Artisan Coffee Craft" class="heritage-main-img">
+            </div>
+            <div class="heritage-floating-card">
+              <img src="assets/images/intro-intimate.jpg" alt="Intimate table with warm candle glow" class="heritage-floating-img">
+            </div>
+          </div>
+
+          <!-- Story Narrative -->
+          <div class="heritage-content">
+            <span class="editorial-badge">OUR HERITAGE</span>
+            <h2 class="heritage-headline">
+              Inspired by Heritage.<br>
+              <span class="italic-accent">Crafted with Precision.</span>
+            </h2>
+            <p class="heritage-p">
+              Our café combines exceptional coffee with comfort. Every detail, from our ethically sourced beans to our intimate interiors, reflects our commitment to more than just a beverage — it’s about creating a space where guests can relax, connect, and enjoy meaningful moments.
+            </p>
+            <p class="heritage-p">
+              Whether you are meeting for a delicate morning espresso or settling in for an evening of freshly tossed pasta, Cofume offers an atmosphere of calm seclusion where conversations happen naturally.
+            </p>
+
+            <div class="heritage-stats-row">
+              <div class="heritage-stat-box">
+                <span class="heritage-stat-number">100%</span>
+                <span class="heritage-stat-label">Single Origin Arabica</span>
+              </div>
+              <div class="heritage-stat-box">
+                <span class="heritage-stat-number">48h</span>
+                <span class="heritage-stat-label">Fermented Pizza Dough</span>
+              </div>
+              <div class="heritage-stat-box">
+                <span class="heritage-stat-number">12+</span>
+                <span class="heritage-stat-label">Secluded Booths</span>
+              </div>
+            </div>
+
+            <div style="margin-top: 1rem;">
+              <a href="#reserve" class="btn btn-pill-dark">
+                <span>Reserve A Table</span>
+                <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         05. SECTION 04 — SIGNATURE MENU PREVIEW
+         ===================================================================== -->
+    <section class="section-menu-preview" id="menu">
+      <div class="container">
+        <div class="section-head section-head-center">
+          <span class="editorial-badge">SIGNATURE MENU</span>
+          <h2 class="section-head-title">Handpicked Selections Loved by Our Guests</h2>
+          <p class="section-head-desc">
+            From single-origin pour-overs to handcrafted truffle pasta and wood-fired pizza, explore our seasonal favorites.
+          </p>
+        </div>
+
+        <!-- Filter Bar -->
+        <div class="menu-filter-bar">
+          <button class="menu-filter-btn is-active" data-filter="all">All Specialties</button>
+          <button class="menu-filter-btn" data-filter="coffee">Specialty Coffee</button>
+          <button class="menu-filter-btn" data-filter="pasta">Fresh Pasta</button>
+          <button class="menu-filter-btn" data-filter="pizza">Wood-Fired Pizza</button>
+          <button class="menu-filter-btn" data-filter="bakery">Croissants & Dolci</button>
+        </div>
+
+        <!-- 6 Featured Cards -->
+        <div class="menu-cards-showcase">
+          <!-- 1: Espresso -->
+          <article class="menu-editorial-card" data-cat="coffee">
+            <div class="menu-card-visual">
+              <img src="assets/images/coffee-espresso.jpg" alt="Single Origin Espresso" class="menu-card-img">
+              <span class="menu-card-price-badge">$4.50</span>
+            </div>
+            <div class="menu-card-info">
+              <span class="menu-card-cat-tag">Single Origin &bull; Ethiopia</span>
+              <h3 class="menu-card-name">Single Origin Espresso</h3>
+              <p class="menu-card-details">Double extraction highlighting bergamot, jasmine florals, and candied apricot with sparkling water.</p>
+            </div>
+          </article>
+
+          <!-- 2: Velvet Flat White -->
+          <article class="menu-editorial-card" data-cat="coffee">
+            <div class="menu-card-visual">
+              <img src="assets/images/coffee-latteart.jpg" alt="Velvet Flat White" class="menu-card-img">
+              <span class="menu-card-price-badge">$5.50</span>
+            </div>
+            <div class="menu-card-info">
+              <span class="menu-card-cat-tag">Signature Blend</span>
+              <h3 class="menu-card-name">Velvet Flat White</h3>
+              <p class="menu-card-details">Double ristretto paired with silky micro-foam, dark cocoa, toasted macadamia, and honey finish.</p>
+            </div>
+          </article>
+
+          <!-- 3: Truffle Tagliatelle -->
+          <article class="menu-editorial-card" data-cat="pasta">
+            <div class="menu-card-visual">
+              <img src="assets/images/food-pasta.jpg" alt="Tagliatelle al Tartufo" class="menu-card-img">
+              <span class="menu-card-price-badge">$24.00</span>
+            </div>
+            <div class="menu-card-info">
+              <span class="menu-card-cat-tag">Fresh Pasta &bull; Umbria</span>
+              <h3 class="menu-card-name">Tagliatelle al Tartufo</h3>
+              <p class="menu-card-details">Handmade egg tagliatelle tossed in cultured Umbrian truffle butter and aged Parmigiano Reggiano.</p>
+            </div>
+          </article>
+
+          <!-- 4: Margherita D.O.P. -->
+          <article class="menu-editorial-card" data-cat="pizza">
+            <div class="menu-card-visual">
+              <img src="assets/images/food-pizza.jpg" alt="Margherita Verace D.O.P." class="menu-card-img">
+              <span class="menu-card-price-badge">$19.00</span>
+            </div>
+            <div class="menu-card-info">
+              <span class="menu-card-cat-tag">Wood-Fired &bull; 48h Ferment</span>
+              <h3 class="menu-card-name">Margherita Verace D.O.P.</h3>
+              <p class="menu-card-details">San Marzano D.O.P. tomato reduction, fresh Fior di Latte mozzarella, sweet basil, and Ligurian EVOO.</p>
+            </div>
+          </article>
+
+          <!-- 5: Pistachio Croissant -->
+          <article class="menu-editorial-card" data-cat="bakery">
+            <div class="menu-card-visual">
+              <img src="assets/images/food-croissant.jpg" alt="Pistachio Supreme Croissant" class="menu-card-img">
+              <span class="menu-card-price-badge">$6.50</span>
+            </div>
+            <div class="menu-card-info">
+              <span class="menu-card-cat-tag">Daily Bakery</span>
+              <h3 class="menu-card-name">Pistachio Croissant</h3>
+              <p class="menu-card-details">72-layer laminated French butter pastry filled with roasted Bronte pistachio cream and pistachio crumble.</p>
+            </div>
+          </article>
+
+          <!-- 6: Tiramisù -->
+          <article class="menu-editorial-card" data-cat="bakery">
+            <div class="menu-card-visual">
+              <img src="assets/images/gallery-dessert.jpg" alt="Tiramisu al Mascarpone" class="menu-card-img">
+              <span class="menu-card-price-badge">$8.50</span>
+            </div>
+            <div class="menu-card-info">
+              <span class="menu-card-cat-tag">Italian Dolce</span>
+              <h3 class="menu-card-name">Tiramisù Tradizionale</h3>
+              <p class="menu-card-details">Single-origin espresso-soaked savoiardi biscuits, whipped mascarpone zabaione, and Valrhona cocoa.</p>
+            </div>
+          </article>
+        </div>
+
+        <div style="text-align: center;">
+          <button class="btn btn-pill-primary" data-open-menu data-menu-category="all">
+            <span>Explore Complete Menu Collection</span>
+            <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         06. SECTION 05 — THE SANCTUARY (PRIVATE SPACES SHOWCASE)
+         ===================================================================== -->
+    <section class="section-sanctuary" id="sanctuary">
+      <div class="container">
+        <div class="section-head">
+          <span class="editorial-badge">ARCHITECTURAL SECLUSION</span>
+          <h2 class="section-head-title">Privacy. Comfort. Your Kind of Moments.</h2>
+          <p class="section-head-desc">
+            We believe that true hospitality requires acoustic breathing room. Every seating zone in Cofume Cafe is intentionally positioned to give you your own comfortable world.
+          </p>
+        </div>
+
+        <!-- Panoramic Banner -->
+        <div class="sanctuary-banner">
+          <img src="assets/images/private-interior.jpg" alt="Cofume Cafe Private Interior Architecture" class="sanctuary-banner-img">
+          <div class="sanctuary-banner-overlay">
+            <div class="sanctuary-banner-content">
+              <p class="sanctuary-quote">
+                "Conversations that feel personal. Space to relax. Time to connect."
+              </p>
+              <p class="sanctuary-desc">
+                From curtained velvet alcoves to warm corner window nooks, enjoy an atmosphere where you never have to compete with crowd noise or hurried table turnovers.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3 Private Seating Categories -->
+        <div class="sanctuary-spaces-grid">
+          <div class="space-card">
+            <div class="space-number">01 // SANCTUARY</div>
+            <h3 class="space-title">The Velvet Alcoves</h3>
+            <p class="space-body">
+              Screened by warm acoustic timber louvers and soft linen drapes. Perfect for intimate dates, quiet anniversaries, or focused private dialogue.
+            </p>
+          </div>
+
+          <div class="space-card">
+            <div class="space-number">02 // REFLECTION</div>
+            <h3 class="space-title">The Window Nooks</h3>
+            <p class="space-body">
+              Sunlit morning corners overlooking the garden terrace with plush armchairs, ideal for unhurried solo reading or casual creative work.
+            </p>
+          </div>
+
+          <div class="space-card">
+            <div class="space-number">03 // TOGETHERNESS</div>
+            <h3 class="space-title">The Hearth Dining Room</h3>
+            <p class="space-body">
+              Generous banquette seating and warm ambient candle glow designed for friends and families sharing pasta bowls and wood-fired pizza late into the night.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         07. SECTION 06 — GUEST REVIEWS (CAFENZA SECTION)
+         ===================================================================== -->
+    <section class="section-reviews" id="reviews">
+      <div class="container">
+        <div class="section-head section-head-center">
+          <span class="editorial-badge">GUEST EXPERIENCE</span>
+          <h2 class="section-head-title">Words That Reflect Our Guests' Time</h2>
+          <p class="section-head-desc">
+            Reflections from our loyal visitors who appreciate quiet craftsmanship and comforting spaces.
+          </p>
+        </div>
+
+        <div class="reviews-grid">
+          <div class="review-card">
+            <p class="review-quote">
+              "Finding a café that balances world-class single-origin espresso with authentic privacy is nearly impossible. Cofume feels like a calm retreat away from urban noise."
+            </p>
+            <div class="review-author">
+              <span class="review-author-name">Elena Rostova</span>
+              <span class="review-author-role">Architectural Designer &bull; Regular Guest</span>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <p class="review-quote">
+              "We chose the private alcove for our anniversary dinner. The truffle tagliatelle was sensational, and being able to talk without shouting made our evening truly memorable."
+            </p>
+            <div class="review-author">
+              <span class="review-author-name">David &amp; Sarah Lin</span>
+              <span class="review-author-role">Couple &bull; Private Dining</span>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <p class="review-quote">
+              "The wood-fired Margherita has that authentic Neapolitan leopard crust, and the vanilla bean oat latte is unmatched. You can actually stay for hours in complete peace."
+            </p>
+            <div class="review-author">
+              <span class="review-author-name">Marcus Vance</span>
+              <span class="review-author-role">Food Writer &bull; Espresso Enthusiast</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         08. SECTION 07 — REFINED AMBIENCE (VISUAL JOURNAL GALLERY)
+         ===================================================================== -->
+    <section class="section-ambience-gallery" id="ambience">
+      <div class="container">
+        <div class="section-head section-head-center">
+          <span class="editorial-badge">REFINED AMBIENCE</span>
+          <h2 class="section-head-title">Moments Captured in Our Café</h2>
+          <p class="section-head-desc">
+            A visual journal of our espresso bar, stone ovens, and intimate seating corners.
+          </p>
+        </div>
+
+        <div class="ambience-grid">
+          <!-- Plate 1 -->
+          <div class="ambience-item" tabindex="0" role="button" aria-label="Single Origin Espresso Extraction">
+            <img src="assets/images/hero-barista.jpg" alt="Barista extracting espresso" class="ambience-img">
+            <div class="ambience-caption">
+              <span class="ambience-tag">Roastery &bull; Extraction</span>
+              <h4 class="ambience-title">Single Origin Pour</h4>
+            </div>
+          </div>
+
+          <!-- Plate 2 -->
+          <div class="ambience-item" tabindex="0" role="button" aria-label="Wood-fired Pizza">
+            <img src="assets/images/food-pizza.jpg" alt="Artisanal wood-fired pizza" class="ambience-img">
+            <div class="ambience-caption">
+              <span class="ambience-tag">Wood-Fired &bull; 48h Dough</span>
+              <h4 class="ambience-title">Verace Pizza Napoletana</h4>
+            </div>
+          </div>
+
+          <!-- Plate 3 -->
+          <div class="ambience-item" tabindex="0" role="button" aria-label="Private Dining Corner">
+            <img src="assets/images/intro-intimate.jpg" alt="Intimate private dining corner" class="ambience-img">
+            <div class="ambience-caption">
+              <span class="ambience-tag">Sanctuary &bull; Seclusion</span>
+              <h4 class="ambience-title">The Velvet Alcove</h4>
+            </div>
+          </div>
+
+          <!-- Plate 4 -->
+          <div class="ambience-item" tabindex="0" role="button" aria-label="Truffle Tagliatelle">
+            <img src="assets/images/food-pasta.jpg" alt="Truffle Tagliatelle Pasta" class="ambience-img">
+            <div class="ambience-caption">
+              <span class="ambience-tag">Fresh Pasta &bull; Umbria</span>
+              <h4 class="ambience-title">Tagliatelle al Tartufo</h4>
+            </div>
+          </div>
+
+          <!-- Plate 5 -->
+          <div class="ambience-item" tabindex="0" role="button" aria-label="Golden Croissants">
+            <img src="assets/images/food-croissant.jpg" alt="Fresh laminated croissants" class="ambience-img">
+            <div class="ambience-caption">
+              <span class="ambience-tag">Bakery &bull; Cultured Butter</span>
+              <h4 class="ambience-title">Pistachio Croissant</h4>
+            </div>
+          </div>
+
+          <!-- Plate 6 -->
+          <div class="ambience-item" tabindex="0" role="button" aria-label="Specialty Coffee Beans">
+            <img src="assets/images/gallery-beans.jpg" alt="Roasted specialty coffee beans" class="ambience-img">
+            <div class="ambience-caption">
+              <span class="ambience-tag">Micro-lot &bull; Grade 1</span>
+              <h4 class="ambience-title">Roasted Arabica Beans</h4>
+            </div>
+          </div>
+
+          <!-- Plate 7 -->
+          <div class="ambience-item" tabindex="0" role="button" aria-label="Traditional Tiramisu">
+            <img src="assets/images/gallery-dessert.jpg" alt="Italian Tiramisu Dessert" class="ambience-img">
+            <div class="ambience-caption">
+              <span class="ambience-tag">Pasticceria &bull; Mascarpone</span>
+              <h4 class="ambience-title">Tiramisù Tradizionale</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         09. SECTION 08 — FAQ ACCORDION (CAFENZA SECTION)
+         ===================================================================== -->
+    <section class="section-faq theme-cream" id="faq">
+      <div class="container">
+        <div class="section-head section-head-center">
+          <span class="editorial-badge">FAQ</span>
+          <h2 class="section-head-title">Your Questions Answered</h2>
+          <p class="section-head-desc">
+            Everything you need to know about our seating, reservations, and dining experience.
+          </p>
+        </div>
+
+        <div class="faq-container">
+          <!-- Item 1 -->
+          <div class="faq-item is-open">
+            <button class="faq-trigger" aria-expanded="true">
+              <span>Can I reserve a private table or booth in advance?</span>
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M6 9l6 6 6-6"/>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              Yes, absolutely. We encourage guests planning dates, intimate celebrations, or confidential meetings to specify their seating preference in our reservation form. Our host desk reviews each request and confirms your private booth via WhatsApp.
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false">
+              <span>Do you serve authentic Italian pasta and pizza daily?</span>
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M6 9l6 6 6-6"/>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              Yes. Our fresh egg pasta is extruded daily using Italian bronze dies, and our pizza dough undergoes a natural 48-hour slow fermentation before being baked stone-side for optimal texture and lightness.
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false">
+              <span>Where do you source your specialty coffee beans?</span>
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M6 9l6 6 6-6"/>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              We partner directly with ethical single-origin farms across Yirgacheffe (Ethiopia), Huila (Colombia), and Antigua (Guatemala). Every batch is small-batch roasted to highlight floral, caramel, and chocolate tasting notes.
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false">
+              <span>Is Cofume suitable for quiet reading or remote work?</span>
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M6 9l6 6 6-6"/>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              Yes. During morning and afternoon hours, our Window Nooks and garden terrace provide peaceful, acoustic-friendly spaces with discreet power outlets and unhurried hospitality.
+            </div>
+          </div>
+
+          <!-- Item 5 -->
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false">
+              <span>Are vegetarian and dairy-free options available?</span>
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M6 9l6 6 6-6"/>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              Certainly. We offer organic oat milk and almond milk for all coffee beverages, as well as classic vegetarian Italian dishes including Tagliatelle al Tartufo, Margherita D.O.P., and Quattro Formaggi pizza.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         10. SECTION 09 — RESERVATION SANCTUARY
+         ===================================================================== -->
+    <section class="section-booking" id="reserve">
+      <div class="container">
+        <div class="booking-split">
+          <!-- Left: Sanctuary Promise -->
+          <div class="booking-info-panel">
+            <div>
+              <span class="editorial-badge">YOUR INVITATION</span>
+              <h2 class="section-head-title" style="margin-top: 0.5rem;">
+                Your Next Favourite Moment<br>
+                <span class="italic-accent">Starts Here.</span>
+              </h2>
+              <p class="section-head-desc">
+                Come for the coffee. Stay for the experience. We look forward to welcoming you into your own private corner.
+              </p>
+            </div>
+
+            <div class="booking-info-box">
+              <div>
+                <div class="info-item-label">Sanctuary Location</div>
+                <div class="info-item-val">Cofume Cafe Flagship</div>
+                <div class="info-item-sub">Central Promenade &bull; Suite 104, Boutique District</div>
+              </div>
+
+              <div>
+                <div class="info-item-label">Opening Hours</div>
+                <div class="info-item-val">Monday – Friday: 07:30 AM – 11:00 PM</div>
+                <div class="info-item-val">Saturday – Sunday: 08:00 AM – 11:30 PM</div>
+              </div>
+
+              <div>
+                <div class="info-item-label">Direct Concierge</div>
+                <div class="info-item-val">+1 (555) 234-COFUME</div>
+                <div class="info-item-sub">Direct WhatsApp reservations confirmed live</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Interactive Reservation Form -->
+          <div class="booking-form-box">
+            <form id="reservation-form" class="booking-form" novalidate>
+              <div class="form-2col">
+                <div class="form-field">
+                  <label for="res-name" class="form-label">Full Name *</label>
+                  <input type="text" id="res-name" class="form-input" placeholder="e.g. Marco Rossi" required>
+                </div>
+                <div class="form-field">
+                  <label for="res-phone" class="form-label">Phone Number *</label>
+                  <input type="tel" id="res-phone" class="form-input" placeholder="e.g. +1 555 123 4567" required>
+                </div>
+              </div>
+
+              <div class="form-2col">
+                <div class="form-field">
+                  <label for="res-date" class="form-label">Preferred Date *</label>
+                  <input type="date" id="res-date" class="form-input" required>
+                </div>
+                <div class="form-field">
+                  <label for="res-time" class="form-label">Preferred Time *</label>
+                  <select id="res-time" class="form-select" required>
+                    <option value="" disabled selected>Select Time Slot</option>
+                    <option value="Morning Coffee (08:30 AM)">Morning Coffee (08:30 AM)</option>
+                    <option value="Brunch & Pastry (10:30 AM)">Brunch &amp; Pastry (10:30 AM)</option>
+                    <option value="Italian Lunch (01:00 PM)">Italian Lunch (01:00 PM)</option>
+                    <option value="Afternoon Espresso & Dolci (04:00 PM)">Afternoon Espresso &amp; Dolci (04:00 PM)</option>
+                    <option value="Twilight Dinner (07:00 PM)">Twilight Dinner (07:00 PM)</option>
+                    <option value="Late Dining & Dessert (09:00 PM)">Late Dining &amp; Dessert (09:00 PM)</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-2col">
+                <div class="form-field">
+                  <label for="res-guests" class="form-label">Number of Guests *</label>
+                  <select id="res-guests" class="form-select" required>
+                    <option value="1">1 Person (Quiet Solo)</option>
+                    <option value="2" selected>2 Guests (Date / Catch-up)</option>
+                    <option value="3">3 Guests</option>
+                    <option value="4">4 Guests (Friends / Family)</option>
+                    <option value="5">5 Guests</option>
+                    <option value="6+">6+ Guests (Private Gathering)</option>
+                  </select>
+                </div>
+
+                <div class="form-field">
+                  <label for="res-seating" class="form-label">Seating Preference</label>
+                  <select id="res-seating" class="form-select">
+                    <option value="Private Alcove Booth (Quiet & Secluded)" selected>Private Alcove Booth (Quiet &amp; Secluded)</option>
+                    <option value="Window Nook (Daylight & Garden View)">Window Nook (Daylight &amp; Garden View)</option>
+                    <option value="Candlelit Dining Table (Special Occasion)">Candlelit Dining Table (Special Occasion)</option>
+                    <option value="Hearth Dining Room (Casual Gathering)">Hearth Dining Room (Casual Gathering)</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-field">
+                <label for="res-occasion" class="form-label">Occasion (Optional)</label>
+                <select id="res-occasion" class="form-select">
+                  <option value="Casual Gathering" selected>Casual Dining / Catch-up</option>
+                  <option value="Romantic Date">Romantic Date / Anniversary</option>
+                  <option value="Birthday Celebration">Birthday Celebration</option>
+                  <option value="Business Meeting">Business Discussion</option>
+                  <option value="Peaceful Solo Work">Peaceful Solo Reading/Work</option>
+                </select>
+              </div>
+
+              <div class="form-field">
+                <label for="res-notes" class="form-label">Special Requests / Dietary Notes</label>
+                <textarea id="res-notes" class="form-textarea" placeholder="E.g. Table away from the door, dietary requirements, anniversary flowers..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-pill-primary" style="width: 100%; padding: 0.95rem;">
+                <span>Request Reservation via WhatsApp</span>
+                <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =======================================================================
+       11. SITE FOOTER
+       ======================================================================= -->
+  <footer class="footer-editorial" role="contentinfo">
+    <div class="container">
+      <div class="footer-main-grid">
+        <!-- Col 1: Brand -->
+        <div class="footer-brand">
+          <div class="footer-brand-lockup">
+            <svg class="footer-brand-svg" viewBox="0 0 160 120" fill="none">
+              <path d="M78 12 C74 22 84 28 80 38 C77 44 73 46 72 50 C71 52 73 54 75 52 C79 48 83 44 85 38 C89 26 77 22 81 12 C82 9 80 9 78 12Z" fill="currentColor"/>
+              <path d="M89 18 C86 25 93 29 90 37 C88 41 84 43 83 47 C82 49 84 50 86 48 C89 45 93 41 94 36 C97 27 88 23 91 18 C92 16 90 16 89 18Z" fill="currentColor"/>
+              <path d="M52 50 C52 50 56 82 86 82 C108 82 118 64 120 50 C110 54 98 56 86 56 C74 56 62 54 52 50Z" fill="currentColor"/>
+              <path d="M115 52 C125 53 134 60 128 73 C124 81 113 77 108 73 C113 75 120 76 123 71 C127 63 121 57 113 55 Z" fill="currentColor"/>
+              <path d="M48 87 C60 92 112 92 124 87 C118 90 98 94 86 94 C74 94 54 90 48 87Z" fill="currentColor"/>
+            </svg>
+            <span class="footer-brand-name">COFUME CAFE</span>
+          </div>
+          <p class="footer-brand-p">
+            A premium sanctuary celebrating single-origin coffee, authentic Italian cuisine, and secluded comfort for meaningful moments.
+          </p>
+        </div>
+
+        <!-- Col 2: Navigation -->
+        <div>
+          <h4 class="footer-nav-col-title">Navigation</h4>
+          <ul class="footer-nav-list">
+            <li><a href="#hero" class="footer-nav-item">Home Sanctuary</a></li>
+            <li><a href="#highlights" class="footer-nav-item">Our Highlights</a></li>
+            <li><a href="#heritage" class="footer-nav-item">Our Heritage</a></li>
+            <li><a href="#sanctuary" class="footer-nav-item">Private Spaces</a></li>
+            <li><a href="#ambience" class="footer-nav-item">Visual Journal</a></li>
+            <li><a href="#reserve" class="footer-nav-item">Reserve Table</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Menu Links -->
+        <div>
+          <h4 class="footer-nav-col-title">Signature Menu</h4>
+          <ul class="footer-nav-list">
+            <li><a href="#" class="footer-nav-item" data-open-menu data-menu-category="coffee">Specialty Espresso</a></li>
+            <li><a href="#" class="footer-nav-item" data-open-menu data-menu-category="pasta">Handcrafted Tagliatelle</a></li>
+            <li><a href="#" class="footer-nav-item" data-open-menu data-menu-category="pizza">Wood-Fired Pizza</a></li>
+            <li><a href="#" class="footer-nav-item" data-open-menu data-menu-category="bakery">Butter Croissants</a></li>
+            <li><a href="#" class="footer-nav-item" data-open-menu data-menu-category="bakery">Traditional Tiramisù</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Hours & Social -->
+        <div>
+          <h4 class="footer-nav-col-title">Sanctuary Hours</h4>
+          <div style="font-size: 0.88rem; color: var(--color-text-on-dark-muted); line-height: 1.6; margin-bottom: 1rem;">
+            Mon–Fri: 07:30 AM – 11:00 PM<br>
+            Sat–Sun: 08:00 AM – 11:30 PM
+          </div>
+          <div style="font-size: 0.88rem; color: var(--color-text-on-dark-muted);">
+            Instagram: <a href="https://instagram.com" target="_blank" rel="noopener" style="color: var(--color-bronze-light);">@cofumecafe</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <div class="footer-tagline">"Good Taste. Good Company. Great Moments."</div>
+        <div class="footer-copy">&copy; 2024 COFUME CAFE. ALL RIGHTS RESERVED.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =======================================================================
+       12. FLOATING WHATSAPP CONCIERGE
+       ======================================================================= -->
+  <aside class="floating-concierge" aria-label="Direct WhatsApp Concierge">
+    <a href="https://wa.me/1234567890?text=Hello%20Cofume%20Cafe%2C%20I%20would%20like%20to%20inquire%20about%20table%20reservation%20and%20private%20spaces." 
+       target="_blank" 
+       rel="noopener" 
+       class="wa-concierge-btn">
+      <div class="wa-dot">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm.01 1.67c4.54 0 8.24 3.7 8.24 8.24 0 2.2-.86 4.27-2.42 5.82-1.56 1.55-3.63 2.41-5.83 2.41-1.45 0-2.88-.39-4.14-1.13l-.3-.18-3.11.82.83-3.03-.2-.31c-.81-1.3-1.24-2.82-1.24-4.4 0-4.54 3.7-8.24 8.24-8.24zm4.52 11.59c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.02-1.24-.75-.67-1.25-1.49-1.4-1.74-.14-.25-.02-.39.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.13.17 1.78 2.71 4.31 3.8.6.26 1.07.42 1.44.54.61.19 1.16.17 1.6.1.49-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.11-.23-.17-.48-.3z"/>
+        </svg>
+      </div>
+      <span>WhatsApp Concierge</span>
+    </a>
+  </aside>
+
+  <!-- =======================================================================
+       13. INTERACTIVE FULL MENU EXPLORER MODAL
+       ======================================================================= -->
+  <div class="modal-overlay" id="menu-modal" role="dialog" aria-modal="true" aria-label="Menu Explorer Modal">
+    <div class="modal-window">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <span class="modal-eyebrow">COFUME CAFE &bull; CULINARY MENU</span>
+          <h3 class="modal-title">Our Complete Collection</h3>
+        </div>
+        <button class="modal-close-btn" id="modal-menu-close" aria-label="Close Menu Modal">&times;</button>
+      </div>
+
+      <div class="modal-toolbar">
+        <div class="modal-tabs" id="modal-menu-tabs">
+          <!-- Injected dynamically -->
+        </div>
+        <div class="modal-search-wrap">
+          <input type="text" id="modal-menu-search" class="modal-search-input" placeholder="Search coffee, pasta, pizza..." aria-label="Search Menu">
+        </div>
+      </div>
+
+      <div class="modal-body">
+        <div class="modal-items-grid" id="modal-menu-grid">
+          <!-- Injected dynamically -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =======================================================================
+       14. RESERVATION CONFIRMATION DIALOG
+       ======================================================================= -->
+  <div class="modal-overlay" id="reservation-confirm-modal" role="dialog" aria-modal="true" aria-label="Reservation Summary Confirmation">
+    <div class="modal-window res-confirm-window">
+      <div class="res-confirm-icon">&#10003;</div>
+      <h3 class="res-confirm-title">Reservation Details Prepared</h3>
+      <div id="res-confirm-text"></div>
+      <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+        <a href="#" id="res-confirm-wa-btn" class="btn btn-pill-primary" style="flex: 1; min-width: 200px;">
+          <span>Connect via WhatsApp</span>
+        </a>
+        <button id="res-confirm-close" class="btn btn-pill-ghost" style="min-width: 120px;">
+          <span>Close</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- =======================================================================
+       15. VISUAL GALLERY LIGHTBOX
+       ======================================================================= -->
+  <div class="lightbox-overlay" id="gallery-lightbox" role="dialog" aria-modal="true" aria-label="Visual Gallery Lightbox">
+    <button class="lightbox-close-btn" id="lightbox-close" aria-label="Close Lightbox">&times;</button>
+    <button class="lightbox-nav-btn lightbox-nav-prev" id="lightbox-prev" aria-label="Previous Image">&#10094;</button>
+    
+    <div class="lightbox-img-wrapper">
+      <img src="" alt="" class="lightbox-img" id="lightbox-img">
+    </div>
+
+    <div class="lightbox-caption">
+      <span class="lightbox-tag" id="lightbox-tag"></span>
+      <h4 class="lightbox-title" id="lightbox-title"></h4>
+      <span class="lightbox-counter" id="lightbox-counter"></span>
+    </div>
+
+    <button class="lightbox-nav-btn lightbox-nav-next" id="lightbox-next" aria-label="Next Image">&#10095;</button>
+  </div>
+
+  <!-- Application Logic (Cache-busted) -->
+  <script type="module" src="assets/js/app.js?v=20261103"></script>
+</body>
+</html>

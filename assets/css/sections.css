@@ -1,0 +1,845 @@
+/* ==========================================================================
+   COFUME CAFE — EDITORIAL SECTIONS (CAFENZA AESTHETIC)
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   01. HERO SECTION (EDITORIAL TRIPTYCH SHOWCASE)
+   -------------------------------------------------------------------------- */
+.hero-editorial {
+  position: relative;
+  min-height: 100vh;
+  padding: calc(var(--header-height) + 5rem) 0 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: var(--color-dark-obsidian);
+  overflow: hidden;
+}
+
+/* Subtle ambient radial glow behind the headline */
+.hero-editorial::before {
+  content: "";
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 720px;
+  height: 480px;
+  background: radial-gradient(circle, rgba(164, 137, 97, 0.12) 0%, rgba(21, 13, 7, 0) 70%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.hero-inner {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.hero-main-title {
+  font-size: clamp(3rem, 2.4rem + 4vw, 5.8rem);
+  font-weight: 500;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  color: var(--color-cream-light);
+  margin-bottom: 1.25rem;
+  text-wrap: balance;
+}
+
+.hero-main-title .italic-accent {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 400;
+  color: var(--color-bronze-light);
+}
+
+.hero-lead-text {
+  font-size: clamp(1.05rem, 0.98rem + 0.35vw, 1.25rem);
+  color: var(--color-text-on-dark-muted);
+  max-width: 640px;
+  line-height: 1.65;
+  margin-bottom: 2.5rem;
+}
+
+.hero-cta-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+  margin-bottom: 4rem;
+  flex-wrap: wrap;
+}
+
+/* Hero Photography Triptych (Framed visual showcase like Cafenza) */
+.hero-triptych {
+  display: grid;
+  grid-template-columns: 1fr 1.25fr 1fr;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.triptych-card {
+  position: relative;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--color-dark-border);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+  background: var(--color-dark-surface);
+  transition: transform var(--transition-smooth), border-color var(--transition-smooth);
+}
+
+.triptych-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--color-bronze-gold);
+}
+
+.triptych-card.card-side {
+  aspect-ratio: 4 / 5;
+}
+
+.triptych-card.card-center {
+  aspect-ratio: 3.8 / 4.6;
+  border-color: rgba(164, 137, 97, 0.35);
+  box-shadow: 0 25px 65px rgba(0, 0, 0, 0.75);
+}
+
+.triptych-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.8s var(--transition-smooth);
+}
+
+.triptych-card:hover .triptych-img {
+  transform: scale(1.05);
+}
+
+.triptych-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.5rem 1.25rem 1.25rem;
+  background: linear-gradient(0deg, rgba(21, 13, 7, 0.92) 0%, rgba(21, 13, 7, 0) 100%);
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.triptych-tag {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+  color: var(--color-bronze-gold);
+  text-transform: uppercase;
+}
+
+.triptych-title {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  color: var(--color-cream-light);
+  font-weight: 500;
+}
+
+/* --------------------------------------------------------------------------
+   02. OUR HIGHLIGHTS SECTION (CAFENZA SECTION)
+   -------------------------------------------------------------------------- */
+.section-highlights {
+  padding: 6rem 0;
+  background: var(--color-dark-obsidian);
+  border-top: 1px solid var(--color-dark-border-subtle);
+  border-bottom: 1px solid var(--color-dark-border-subtle);
+}
+
+/* --------------------------------------------------------------------------
+   03. OUR HERITAGE & STORY (WARM LINEN CREAM SECTION)
+   -------------------------------------------------------------------------- */
+.section-heritage {
+  padding: 8rem 0;
+  background-color: var(--color-cream-soft);
+  color: var(--color-text-on-cream);
+  position: relative;
+}
+
+.heritage-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(3rem, 2rem + 4vw, 6rem);
+  align-items: center;
+}
+
+.heritage-visual-wrap {
+  position: relative;
+}
+
+.heritage-main-img-box {
+  width: 86%;
+  aspect-ratio: 4 / 5;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--color-cream-border);
+  box-shadow: 0 20px 45px rgba(51, 22, 0, 0.12);
+}
+
+.heritage-main-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.heritage-floating-card {
+  position: absolute;
+  bottom: -8%;
+  right: 0;
+  width: 55%;
+  aspect-ratio: 1 / 1;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 4px solid var(--color-cream-soft);
+  box-shadow: 0 16px 40px rgba(51, 22, 0, 0.18);
+}
+
+.heritage-floating-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.heritage-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.heritage-headline {
+  font-size: clamp(2.4rem, 1.8rem + 2.5vw, 3.8rem);
+  font-weight: 500;
+  line-height: 1.1;
+  color: var(--color-text-on-cream);
+}
+
+.heritage-p {
+  font-size: 1.05rem;
+  color: var(--color-text-on-cream-muted);
+  line-height: 1.8;
+}
+
+.heritage-stats-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--color-cream-border);
+  margin-top: 0.5rem;
+}
+
+.heritage-stat-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.heritage-stat-number {
+  font-family: var(--font-display);
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: var(--color-bronze-dark);
+  line-height: 1;
+}
+
+.heritage-stat-label {
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  color: var(--color-text-on-cream-subtle);
+  margin-top: 0.4rem;
+  line-height: 1.4;
+}
+
+/* --------------------------------------------------------------------------
+   04. SIGNATURE MENU (COFFEE & ITALIAN CUISINE)
+   -------------------------------------------------------------------------- */
+.section-menu-preview {
+  padding: 8rem 0;
+  background-color: var(--color-dark-obsidian);
+}
+
+.menu-filter-bar {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-bottom: 3.5rem;
+  flex-wrap: wrap;
+}
+
+.menu-filter-btn {
+  padding: 0.65rem 1.4rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border-radius: var(--radius-pill);
+  background: var(--color-dark-surface);
+  border: 1px solid var(--color-dark-border-subtle);
+  color: var(--color-text-on-dark-muted);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.menu-filter-btn:hover,
+.menu-filter-btn.is-active {
+  background: var(--color-bronze-gold);
+  border-color: var(--color-bronze-gold);
+  color: var(--color-cream-light);
+}
+
+.menu-cards-showcase {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-bottom: 3.5rem;
+}
+
+.menu-editorial-card {
+  background: var(--color-dark-surface);
+  border: 1px solid var(--color-dark-border-subtle);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: all var(--transition-smooth);
+}
+
+.menu-editorial-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--color-dark-border);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.5);
+}
+
+.menu-card-visual {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  position: relative;
+}
+
+.menu-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.8s var(--transition-smooth);
+}
+
+.menu-editorial-card:hover .menu-card-img {
+  transform: scale(1.06);
+}
+
+.menu-card-price-badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: rgba(21, 13, 7, 0.85);
+  backdrop-filter: blur(8px);
+  border: 1px solid var(--color-dark-border);
+  padding: 0.35rem 0.75rem;
+  border-radius: var(--radius-pill);
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--color-bronze-light);
+  font-weight: 600;
+}
+
+.menu-card-info {
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.menu-card-cat-tag {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--color-bronze-gold);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 0.4rem;
+}
+
+.menu-card-name {
+  font-family: var(--font-display);
+  font-size: 1.55rem;
+  font-weight: 600;
+  color: var(--color-cream-light);
+  margin-bottom: 0.65rem;
+}
+
+.menu-card-details {
+  font-size: 0.92rem;
+  color: var(--color-text-on-dark-muted);
+  line-height: 1.6;
+}
+
+/* --------------------------------------------------------------------------
+   05. THE SANCTUARY (PRIVATE SPACES SHOWCASE)
+   -------------------------------------------------------------------------- */
+.section-sanctuary {
+  padding: 8rem 0;
+  background: var(--color-dark-surface);
+  position: relative;
+}
+
+.sanctuary-banner {
+  position: relative;
+  width: 100%;
+  height: 540px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--color-dark-border);
+  margin-bottom: 4rem;
+  box-shadow: 0 25px 65px rgba(0, 0, 0, 0.7);
+}
+
+.sanctuary-banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.sanctuary-banner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(21, 13, 7, 0.92) 0%,
+    rgba(21, 13, 7, 0.65) 50%,
+    rgba(21, 13, 7, 0.25) 100%
+  );
+  display: flex;
+  align-items: center;
+  padding: clamp(2rem, 1.5rem + 4vw, 5.5rem);
+}
+
+.sanctuary-banner-content {
+  max-width: 620px;
+}
+
+.sanctuary-quote {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 1.6rem + 1.5vw, 3rem);
+  line-height: 1.15;
+  font-style: italic;
+  color: var(--color-cream-light);
+  margin-bottom: 1.25rem;
+}
+
+.sanctuary-desc {
+  font-size: 1.1rem;
+  color: var(--color-text-on-dark-muted);
+  line-height: 1.7;
+}
+
+.sanctuary-spaces-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.space-card {
+  background: var(--color-dark-obsidian);
+  border: 1px solid var(--color-dark-border-subtle);
+  border-radius: var(--radius-md);
+  padding: 2.25rem 2rem;
+  transition: all var(--transition-smooth);
+}
+
+.space-card:hover {
+  border-color: var(--color-dark-border);
+  transform: translateY(-4px);
+}
+
+.space-number {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--color-bronze-gold);
+  margin-bottom: 0.75rem;
+}
+
+.space-title {
+  font-family: var(--font-display);
+  font-size: 1.65rem;
+  color: var(--color-cream-light);
+  margin-bottom: 0.75rem;
+}
+
+.space-body {
+  font-size: 0.94rem;
+  color: var(--color-text-on-dark-muted);
+  line-height: 1.65;
+}
+
+/* --------------------------------------------------------------------------
+   06. GUEST REVIEWS & WORDS (CAFENZA SECTION)
+   -------------------------------------------------------------------------- */
+.section-reviews {
+  padding: 7rem 0;
+  background-color: var(--color-cream-light);
+  color: var(--color-text-on-cream);
+}
+
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.review-card {
+  background: #fff;
+  border: 1px solid var(--color-cream-border);
+  border-radius: var(--radius-md);
+  padding: 2.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 10px 30px rgba(51, 22, 0, 0.05);
+  transition: transform var(--transition-fast);
+}
+
+.review-card:hover {
+  transform: translateY(-4px);
+}
+
+.review-quote {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--color-text-on-cream-muted);
+  margin-bottom: 2rem;
+  font-style: italic;
+}
+
+.review-author {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid var(--color-cream-border);
+  padding-top: 1.25rem;
+}
+
+.review-author-name {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-text-on-cream);
+}
+
+.review-author-role {
+  font-size: 0.8rem;
+  color: var(--color-text-on-cream-subtle);
+  letter-spacing: 0.06em;
+}
+
+/* --------------------------------------------------------------------------
+   07. REFINED AMBIENCE (VISUAL JOURNAL GALLERY)
+   -------------------------------------------------------------------------- */
+.section-ambience-gallery {
+  padding: 8rem 0;
+  background: var(--color-dark-obsidian);
+}
+
+.ambience-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-auto-rows: 250px;
+  gap: 1.25rem;
+}
+
+.ambience-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-dark-border-subtle);
+  cursor: pointer;
+}
+
+.ambience-item:nth-child(1) { grid-column: span 6; grid-row: span 2; }
+.ambience-item:nth-child(2) { grid-column: span 3; grid-row: span 1; }
+.ambience-item:nth-child(3) { grid-column: span 3; grid-row: span 2; }
+.ambience-item:nth-child(4) { grid-column: span 3; grid-row: span 1; }
+.ambience-item:nth-child(5) { grid-column: span 4; grid-row: span 1; }
+.ambience-item:nth-child(6) { grid-column: span 4; grid-row: span 1; }
+.ambience-item:nth-child(7) { grid-column: span 4; grid-row: span 1; }
+
+.ambience-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.8s var(--transition-smooth);
+}
+
+.ambience-item:hover .ambience-img {
+  transform: scale(1.08);
+}
+
+.ambience-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.5rem;
+  background: linear-gradient(0deg, rgba(21, 13, 7, 0.9) 0%, rgba(21, 13, 7, 0) 100%);
+  opacity: 0;
+  transition: opacity var(--transition-fast);
+  display: flex;
+  flex-direction: column;
+}
+
+.ambience-item:hover .ambience-caption {
+  opacity: 1;
+}
+
+.ambience-tag {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--color-bronze-gold);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.ambience-title {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  color: var(--color-cream-light);
+}
+
+/* --------------------------------------------------------------------------
+   08. FAQ SECTION (CAFENZA SECTION)
+   -------------------------------------------------------------------------- */
+.section-faq {
+  padding: 7rem 0;
+  background-color: var(--color-cream-soft);
+  color: var(--color-text-on-cream);
+}
+
+/* --------------------------------------------------------------------------
+   09. RESERVATION SANCTUARY
+   -------------------------------------------------------------------------- */
+.section-booking {
+  padding: 8rem 0;
+  background: var(--color-dark-obsidian);
+  position: relative;
+}
+
+.booking-split {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: clamp(3rem, 2rem + 4vw, 6rem);
+  align-items: start;
+}
+
+.booking-info-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.booking-info-box {
+  background: var(--color-dark-surface);
+  border: 1px solid var(--color-dark-border);
+  border-radius: var(--radius-md);
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.info-item-label {
+  font-size: 0.75rem;
+  letter-spacing: 0.16em;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--color-bronze-gold);
+  margin-bottom: 0.35rem;
+}
+
+.info-item-val {
+  font-size: 1.15rem;
+  color: var(--color-cream-light);
+  line-height: 1.5;
+}
+
+.info-item-sub {
+  font-size: 0.88rem;
+  color: var(--color-text-on-dark-muted);
+}
+
+.booking-form-box {
+  background: var(--color-dark-surface);
+  border: 1px solid var(--color-dark-border);
+  border-radius: var(--radius-md);
+  padding: clamp(2rem, 1.5rem + 2vw, 3.5rem);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+}
+
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.35rem;
+}
+
+.form-2col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.form-label {
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-text-on-dark-muted);
+}
+
+.form-input,
+.form-select,
+.form-textarea {
+  width: 100%;
+  padding: 0.85rem 1.15rem;
+  background: rgba(21, 13, 7, 0.85);
+  border: 1px solid var(--color-dark-border-subtle);
+  border-radius: var(--radius-sm);
+  color: var(--color-cream-light);
+  font-size: 0.95rem;
+  transition: all var(--transition-fast);
+}
+
+.form-input:focus,
+.form-select:focus,
+.form-textarea:focus {
+  outline: none;
+  border-color: var(--color-bronze-gold);
+  background: #150d07;
+}
+
+.form-select option {
+  background: #150d07;
+  color: #fff9f2;
+}
+
+.form-textarea {
+  min-height: 95px;
+  resize: vertical;
+}
+
+/* --------------------------------------------------------------------------
+   10. SITE FOOTER
+   -------------------------------------------------------------------------- */
+.footer-editorial {
+  background: #0f0905;
+  border-top: 1px solid var(--color-dark-border-subtle);
+  padding: 6rem 0 3rem;
+}
+
+.footer-main-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 0.8fr 0.8fr 1fr;
+  gap: clamp(2rem, 1.5rem + 2vw, 4rem);
+  margin-bottom: 4.5rem;
+}
+
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.footer-brand-lockup {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.footer-brand-svg {
+  width: 36px;
+  height: 28px;
+  color: var(--color-bronze-gold);
+}
+
+.footer-brand-name {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  letter-spacing: 0.12em;
+  font-weight: 600;
+  color: var(--color-cream-light);
+  text-transform: uppercase;
+}
+
+.footer-brand-p {
+  font-size: 0.92rem;
+  color: var(--color-text-on-dark-muted);
+  line-height: 1.7;
+  max-width: 320px;
+}
+
+.footer-nav-col-title {
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--color-bronze-gold);
+  margin-bottom: 1.25rem;
+}
+
+.footer-nav-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.footer-nav-item {
+  font-size: 0.9rem;
+  color: var(--color-text-on-dark-muted);
+  transition: color var(--transition-fast);
+}
+
+.footer-nav-item:hover {
+  color: var(--color-cream-light);
+}
+
+.footer-bottom-bar {
+  border-top: 1px solid var(--color-dark-border-subtle);
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.footer-tagline {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-style: italic;
+  color: var(--color-bronze-light);
+}
+
+.footer-copy {
+  font-size: 0.8rem;
+  color: var(--color-text-on-dark-subtle);
+  letter-spacing: 0.05em;
+}

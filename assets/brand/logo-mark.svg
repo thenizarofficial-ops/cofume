@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 120" fill="none" class="cofume-mark">
+  <!-- Steam Plumes -->
+  <path d="M78 12 C74 22 84 28 80 38 C77 44 73 46 72 50 C71 52 73 54 75 52 C79 48 83 44 85 38 C89 26 77 22 81 12 C82 9 80 9 78 12Z" fill="currentColor" opacity="0.95"/>
+  <path d="M89 18 C86 25 93 29 90 37 C88 41 84 43 83 47 C82 49 84 50 86 48 C89 45 93 41 94 36 C97 27 88 23 91 18 C92 16 90 16 89 18Z" fill="currentColor" opacity="0.85"/>
+  
+  <!-- Cup Body -->
+  <path d="M52 50 C52 50 56 82 86 82 C108 82 118 64 120 50 C110 54 98 56 86 56 C74 56 62 54 52 50Z" fill="currentColor"/>
+  
+  <!-- Cup Inner Rim / Depth -->
+  <ellipse cx="86" cy="50" rx="34" ry="6" stroke="currentColor" stroke-width="2.2" fill="none" opacity="0.4"/>
+  <ellipse cx="86" cy="51" rx="31" ry="4.5" fill="currentColor" opacity="0.25"/>
+
+  <!-- Handle -->
+  <path d="M115 52 C125 53 134 60 128 73 C124 81 113 77 108 73 C113 75 120 76 123 71 C127 63 121 57 113 55 Z" fill="currentColor"/>
+
+  <!-- Saucer -->
+  <path d="M48 87 C60 92 112 92 124 87 C118 90 98 94 86 94 C74 94 54 90 48 87Z" fill="currentColor"/>
+</svg>
+
